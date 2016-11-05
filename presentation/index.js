@@ -64,9 +64,7 @@ export default class Presentation extends React.Component {
         <Deck transition={["fade"]} transitionDuration={500}>
 
           <Slide bgImage={images.kharkivjsBg.replace("/", "")} bgDarken={0.4}>
-            <Link href="https://github.com/denysdovhan">
-              <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
-            </Link>
+            <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
             <Heading textColor="white" margin=".2em auto 0">
               Hello, Kharkiv!
             </Heading>
@@ -417,8 +415,8 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Persistent command history</ListItem></Appear>
               <Appear><ListItem>Built-in help</ListItem></Appear>
               <Appear><ListItem>Piped commands</ListItem></Appear>
-              <Appear><ListItem>Built-in tabbed auto-completion</ListItem></Appear>
-              <Appear><ListItem>Command-specific auto-completion</ListItem></Appear>
+              <Appear><ListItem>Built-in tabbed autocompletion</ListItem></Appear>
+              <Appear><ListItem>Command-specific autocompletion</ListItem></Appear>
               <Appear><ListItem>Custom event listeners</ListItem></Appear>
             </List>
           </Slide>
@@ -571,6 +569,18 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Heading size={1} textColor="secondary">Conclusion</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading size={4} textColor="secondary">
+              Learn more
+            </Heading>
+            <List>
+              <ListItem>git.io/js-shell-demos</ListItem>
+              <ListItem>git.io/bash-handbook</ListItem>
+              <ListItem>git.io/learnyoubash</ListItem>
+              <ListItem>github.com/alebcay/awesome-shell</ListItem>
+            </List>
           </Slide>
 
           <Slide>
