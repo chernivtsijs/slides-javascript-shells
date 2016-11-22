@@ -33,14 +33,14 @@ import "spectacle/lib/themes/default/index.css";
 
 // Images
 const images = {
-  chernivtsi: require("../assets/chernivtsi.jpg"),
-  chernivtsijsLogo: require("../assets/chernivtsijs-logo.png"),
+  kharkivjsBg: require("../assets/kharkivjs-bg.jpg"),
+  kharkivjsLogo: require("../assets/kharkivjs-logo.png"),
   shells: require("../assets/shells-on-the-beach.jpg"),
   github: require("../assets/denysdovhan-github.png"),
   nodeschoolBg: require("../assets/nodeschool-bg.png"),
   nodeschoolLogo: require("../assets/nodeschool-logo.png"),
   chernivtsijsBg: require("../assets/chernivtsijs-bg.jpg"),
-  chernivtsijsBanner: require("../assets/chernivtsijs-banner.png"),
+  chernivtsijsLogo: require("../assets/chernivtsijs-logo.png"),
   bullshit: require("../assets/bullshit.gif"),
   vorpal: require("../assets/vorpal-logo.png"),
   cash: require("../assets/cash-logo.jpg"),
@@ -63,16 +63,10 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["fade"]} transitionDuration={500}>
 
-          <Slide bgImage={images.chernivtsi.replace("/", "")} bgDarken={0.4}>
-            <Image
-              src={images.chernivtsijsLogo.replace("/", "")}
-              width={220}
-              style={{
-                borderRadius: "7.5px",
-              }}
-            />
+          <Slide bgImage={images.kharkivjsBg.replace("/", "")} bgDarken={0.4}>
+            <Image src={images.kharkivjsLogo.replace("/", "")} width="250px" />
             <Heading textColor="white" margin=".2em auto 0">
-              Hello, Chernivtsi!
+              Hello, Kharkiv!
             </Heading>
           </Slide>
 
@@ -91,7 +85,7 @@ export default class Presentation extends React.Component {
 
           <Slide bgImage={images.chernivtsijsBg.replace("/", "")} bgDarken={0.4}>
             <Link href="https://www.facebook.com/chernivtsijs/" target="_blank">
-              <Image src={images.chernivtsijsBanner.replace("/", "")} width="100%" />
+              <Image src={images.chernivtsijsLogo.replace("/", "")} width="100%" />
               <Text bold textColor="white">facebook.com/chernivtsijs</Text>
             </Link>
           </Slide>
@@ -597,7 +591,7 @@ export default class Presentation extends React.Component {
               </Text>
             </Link>
             <Text textSize="0.6em" margin="1em auto 0">
-              26 Nov 2016
+              5-6 Nov 2016
             </Text>
             <Link href="http://denysdovhan.com/slides-javascript-shells" >
               <Text margin="3em auto 0" textColor="secondary">
